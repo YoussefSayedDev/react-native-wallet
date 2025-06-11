@@ -65,6 +65,7 @@ export const styles = StyleSheet.create({
   },
   addButtonText: {
     color: COLORS.white,
+    fontSize: 12,
     fontWeight: "600",
     marginLeft: 4,
   },
