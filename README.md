@@ -1,50 +1,128 @@
-# Welcome to your Expo app 👋
+# React Native Wallet App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern, secure, and user-friendly mobile wallet application built with React Native and Expo. This application provides a seamless experience for managing digital assets and transactions.
 
-## Get started
+## 🚀 Features
 
-1. Install dependencies
+- **Secure Authentication**: Built-in authentication using Clerk
+- **Modern UI/UX**: Clean and intuitive user interface with smooth animations
+- **Cross-Platform**: Works on both iOS and Android devices
+- **Secure Storage**: Utilizes Expo SecureStore for sensitive data
+- **Offline Support**: Basic functionality available without internet connection
+- **Gesture Support**: Smooth gesture-based interactions
+- **Responsive Design**: Adapts to different screen sizes and orientations
 
+## 📋 Prerequisites
+
+Before you begin, ensure you have the following installed:
+- Node.js (v18 or higher)
+- pnpm (Package Manager)
+- Expo CLI
+- iOS Simulator (for Mac users) or Android Studio (for Android development)
+- Git
+
+## 🛠️ Installation
+
+1. Clone the repository:
    ```bash
-   npm install
+   git clone https://github.com/YoussefSayedDev/react-native-wallet.git
+   cd react-native-wallet/mobile
    ```
 
-2. Start the app
-
+2. Install dependencies:
    ```bash
-   npx expo start
+   pnpm install
    ```
 
-In the output, you'll find options to open the app in a
+3. Start the development server:
+   ```bash
+   pnpm start
+   ```
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🏗️ Project Structure
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+src/
+├── app/          # Main application screens and routing
+├── components/   # Reusable UI components
+├── hooks/        # Custom React hooks
+├── lib/          # Utility functions and services
+├── constants/    # Application constants and configuration
+└── assets/       # Images, fonts, and other static assets
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🚀 Available Scripts
 
-## Learn more
+- `pnpm start` - Start the Expo development server
+- `pnpm android` - Start the app on Android emulator
+- `pnpm ios` - Start the app on iOS simulator
+- `pnpm web` - Start the app in web browser
+- `pnpm lint` - Run ESLint for code quality check
 
-To learn more about developing your project with Expo, look at the following resources:
+## 🔧 Key Dependencies
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- **@clerk/clerk-expo**: Authentication and user management
+- **expo-router**: File-based routing system
+- **expo-secure-store**: Secure storage for sensitive data
+- **react-native-reanimated**: Advanced animations
+- **expo-blur**: UI blur effects
+- **react-native-gesture-handler**: Gesture handling
+- **expo-haptics**: Haptic feedback support
 
-## Join the community
+## 🔐 Security Features
 
-Join our community of developers creating universal apps.
+- Secure authentication flow
+- Encrypted storage for sensitive data
+- Secure transaction handling
+- Protected API endpoints
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 📱 Platform Support
+
+- iOS 13.0 and above
+- Android 8.0 (API level 26) and above
+
+## 🧪 Testing
+
+The application includes:
+- Unit tests for core functionality
+- Integration tests for critical flows
+- UI component testing
+
+## 📦 Building for Production
+
+1. Configure your environment variables
+2. Run the build command:
+   ```bash
+   eas build --platform ios  # For iOS
+   eas build --platform android  # For Android
+   ```
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 👥 Authors
+
+- Your Name - Initial work
+
+## 🙏 Acknowledgments
+
+- Expo team for the amazing framework
+- React Native community for the extensive ecosystem
+- All contributors who have helped shape this project
+
+## 📞 Support
+
+For support, please open an issue in the GitHub repository or contact the development team.
+
+---
+
+Made with ❤️ using React Native and Expo 
