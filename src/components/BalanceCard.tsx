@@ -16,7 +16,9 @@ export function BalanceCard({ summary }: BalanceCardProps) {
     <View style={styles.balanceCard}>
       <Text style={styles.balanceTitle}>Total Balance</Text>
       <Text style={styles.balanceAmount}>
-        ${parseFloat(summary.balance).toFixed(2)}
+        {summary.balance[0] === "-"
+          ? `-$${Math.abs(parseFloat(summary.balance)).toFixed(2)}`
+          : `$${parseFloat(summary.balance).toFixed(2)}`}
       </Text>
       <View style={styles.balanceStats}>
         <View style={[styles.balanceStatItem, styles.statDivider]}>
